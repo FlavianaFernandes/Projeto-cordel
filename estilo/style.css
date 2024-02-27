@@ -97,7 +97,7 @@ section.imagem{
 section#img01{
     background-image: url('../imagens/background001.jpg');
 
-    background-position: left center; /*pois a parte que mais aparece na imagem, está do lado direito (a flor)*/
+    background-position: center center; /*pois a parte que mais aparece na imagem, está do lado direito (a flor)*/
 
     background-size: cover;
 
