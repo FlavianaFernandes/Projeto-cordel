@@ -7,11 +7,12 @@
 *{
     margin: 0px;
     padding: 0px;
-} ok
+    font-size: 1em;
+}
 
 
 :root{
-    --fonte-cabeçalho: "Passion One", sans-serif;
+    --font-cabeçalho:  "Passion One", sans-serif;
     --fonte-corpo-do-texto: "Sriracha", cursive;
     --fonte-padrão:  Verdana, Geneva, Tahoma, sans-serif;
 }
@@ -26,20 +27,21 @@ html, body{
 header{
     background-color: black;
     text-align: center;
-    font-family: var(--fonte-cabeçalho);
     }
 
 header > h1{
-    padding-top: 50px; 
+    font-family: var(--font-cabeçalho);
+    
+    font-style: bolder;
+    
     font-variant: small-caps; /* propriedade nova, serve para quando colocar todas as letras maiúsculas, mas somente a primeira letra de cada palavra que ganha destaque e fica maior*/
-
-    font-family: var(--fonte-cabeçalho);
-    font-style: bold;
 
     font-size: 10vw; /*serve para que a letra aumente ou diminua 10% da largura da tela (viewport width/vw) quando o conteúdo abrir nas diferentes ferramentas como celular e computador, por exemplo (não é a melhor opção, mas é dentro do conteúdo estudado até agora que é HTML5 e CSS3)*/
 
     color: white;
-}
+   
+    padding-top: 50px; 
+    }
 
 header > p{
     padding-bottom: 50px; /* para deixar cabeçalho simétrico, pois também coloquei o padding-top de 50px */
@@ -71,7 +73,7 @@ section{
 
     padding-bottom: 10vh; /* para que tenha 10% da altura total da tela em baixo e dê um bom espaçamento de uma section para outra. o mais importante é que aumentando ou diminuindo a altura do viewport, isso já se adapta */
 
-    padding-left: 40px; /* para que as letras fiquem um pouco afastadas do lado esquerda da viewport */
+    padding-left: 30px; /* para que as letras fiquem um pouco afastadas do lado esquerda da viewport */
 
     line-height: 2em; /* espaçamento duplo entre as frases para facilitar a leitura  */
 }
@@ -81,6 +83,8 @@ section > p{
 }
 
 section.normal{
+    font-family: var(--fonte-corpo-do-texto);
+
     background-color: white;
     color: black;
    }
@@ -90,7 +94,7 @@ section.imagem{
 
     color: white;
 
-    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.445); /* cria uma sompra dentro da imagem (inset), para dar um efeito visual mais agradável */
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.473); /* cria uma sompra dentro da imagem (inset), para dar um efeito visual mais agradável */
 
 }
 
@@ -130,8 +134,7 @@ footer{
     background-color: black;
     color: white;
     text-align: center;
-    font-family: var(--fonte-padrão);
-    font-size: 1.5em;
+    font-size: 1.3em;
     padding: 10px;
 }
 
