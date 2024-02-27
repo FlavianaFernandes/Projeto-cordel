@@ -46,7 +46,7 @@ header > p{
 
     font-family: var(--fonte-padrão);
     color: white;
-    font-size: 1.8em; 
+    font-size: 1.5em; 
 }
 
 header a, footer a { /* forma resumida de estilizar os links do header e footer, mas poderia também estilizar cada um separadamente */
@@ -92,9 +92,6 @@ section.imagem{
 
     box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.445); /* cria uma sompra dentro da imagem (inset), para dar um efeito visual mais agradável */
 
-    background-size: cover;
-
-    background-attachment: fixed;
 }
 
 section#img01{
@@ -102,12 +99,20 @@ section#img01{
 
     background-position: right center; /*pois a parte que mais aparece na imagem, está do lado direito (a flor)*/
 
+    background-size: cover;
+
+    background-attachment: fixed;
+
 }
 
 section#img02{
     background-image: url('../imagens/background002.jpg'); /*importante lembrar que existe uma pasta para estilo e outra para imagens, portanto para inserir a imagem é necessário iniciar com ('../imgens/)*/
 
     background-position: right center; /*pois a parte que mais aparece na imagem, está do lado direito (as letras da carta)*/
+
+    background-size: cover;
+
+    background-attachment: fixed;
 
     }
 
@@ -126,7 +131,7 @@ footer{
     color: white;
     text-align: center;
     font-family: var(--fonte-padrão);
-    font-size: 1.8em;
+    font-size: 1.5em;
     padding: 10px;
 }
 
